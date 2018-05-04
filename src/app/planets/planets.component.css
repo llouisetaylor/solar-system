@@ -1,0 +1,8 @@
+li {
+  display: inline;
+  cursor: pointer;
+}
+
+.selected {
+  font-size: 36px;
+}

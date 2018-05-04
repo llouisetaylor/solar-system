@@ -1,0 +1,9 @@
+<div>
+  <h1>Welcome to the Solar System</h1>
+  <ul class="planets">
+    <li *ngFor="let planet of planets" (click)="onSelect(planet)" [class.selected]="planet === selectedPlanet">
+      <span class="badge">{{planet.id}}</span> {{planet.name}}
+    </li>
+  </ul>
+  <app-planet-detail [planet]="selectedPlanet"></app-planet-detail>
+</div>
